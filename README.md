@@ -30,13 +30,24 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain how to build stateful class components.
 
+  Stateful class components utilize state, a constructor, lifecycle methods and an ability to render other components in order to create a dynamic application.
+
+
 2. Describe the different phases of the component lifecycle.
+
+  The different phases of the component lifecycle are componentDidMount (cDM), componentDidUpdate (cDU) and componentWillUnmount(cWU)
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
+  cDM is when a component is setting up. The component uses initial values so it can render before it receives its default/called values and renders them with cDM. cDU is accessed every time the values change and update. If there is a change to the DOM, the cDU will access the new information and pass it along to be rendered. cWU is used to clean up event handlers when the component is no longer being used.
+
 4. Define stateful logic.
 
+  Stateful logic is logic that the component works with. Typically it handles state, but may also detail logic on how data should be handled or formatted.
+
 5. Describe how to test a React component with React Testing Library.
+
+  The 3 steps for testing are Arrange, Act, and Assert. Arrange is where we tell the test what we want it to work with, using render. Act is the things we want it to locate and/or do with the component. We do this using getBys and/or fireEvents. Assert is what we expect the result to be. This can be as simple as expect('what we were looking for') or can include other conditions such as toBeVisible or toHaveValue. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
