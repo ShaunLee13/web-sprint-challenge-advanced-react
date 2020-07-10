@@ -41,6 +41,5 @@ test("form shows success message on submit with form details", async() => {
     expect(city).toHaveValue('Pretty')    
     expect(state).toHaveValue('EZ')
     expect(zip).toHaveValue('54321')
-
     await expect(getByText(/ordered/i)).resolves.toBeVisible
 });
